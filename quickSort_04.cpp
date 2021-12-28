@@ -1,6 +1,7 @@
 #include <iostream>
 
-// O(nlogn) (nlogbase2n)
+// O(n^2)
+// average O(nlogn)
 
 int number = 10;
 int data[10] = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
@@ -28,7 +29,6 @@ void quickSort(int* data, int first, int last)
         {
             j--;
         }
-
         if (i > j) // swapping
         {
             temp = data[j];
